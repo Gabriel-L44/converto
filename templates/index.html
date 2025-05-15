@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Convertisseur de fichiers</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        input, select { padding: 10px; margin: 10px; }
+        form { display: inline-block; padding: 20px; border: 1px solid #ccc; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <h1>🎛️ Convertisseur de fichiers</h1>
+    <form method="POST" action="/convert" enctype="multipart/form-data">
+        <input type="file" name="file" required><br>
+        <label for="conversion">Convertir en :</label>
+        <select name="conversion">
+            <option value="mp3">Audio (MP3)</option>
+            <option value="png">Image (PNG)</option>
+            <option value="jpg">Image (JPG)</option>
+            <option value="pdf">Document (PDF)</option>
+        </select><br>
+        <input type="submit" value="Convertir">
+    </form>
+</body>
+</html>
